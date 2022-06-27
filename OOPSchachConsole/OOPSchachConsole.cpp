@@ -7,7 +7,8 @@
 
 int main()
 {
-	Spiel spiel;  // ctor
-	spiel.spielstandAnzeigen();
+	Spiel spiel;  // ctor erstellt das Spiel Objekt
+	spiel.spielstandAnzeigen(); // Methode in der Klasse Spiel
+
 }
 

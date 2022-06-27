@@ -6,7 +6,7 @@ Feld::Feld()
 }
 Feld::Feld(char zeile, char spalte) 
 {
-	hell = ((zeile + spalte) % 2);
+	hell = ((zeile + spalte) % 2);  // errechnet 0 oder 1, false oder true 
 	int caseSelector = ((zeile+1) % 2 * 32);
 	int figurFarbe = (zeile + 1) % 2;
 
@@ -14,7 +14,7 @@ Feld::Feld(char zeile, char spalte)
 	{
 	case '2':
 	case '7':
-		figur = new Figur('B'+(zeile%2*32), zeile%2);
+		figur = new Figur('B'+(zeile%2*32), zeile%2); // ctor
 		break;
 	case '1':
 	case '8':

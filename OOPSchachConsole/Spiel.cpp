@@ -11,9 +11,11 @@ Spiel::Spiel()
 			key += spalte;   // 2. Zeichen des Index Buchstabe der Spalte
 			 //                  generieren des Feldes für Zeile, Spalte
 			 //       index      ctor in Feld
-			std::cout << key << " "; 
-			//spielStand[key] = Feld(zeile,spalte); // einzelne Elemente der map
+			//std::cout << key << " "; 
+			spielStand[key] = Feld(zeile,spalte); // einzelne Elemente der map
+			                   // ctor der Klasse Feld
 		}
+	// std::cout << std::endl;
 	}	
 }
 
@@ -26,12 +28,15 @@ void Spiel::spielstandAnzeigen()
 	char hell = 219;
 	char dunkel = 176;
 	
-	for (auto f : spielStand)
+	//  f ist pair aus string und Feld
+	//                 first      second
+	//                 key        value
+	for (auto f : spielStand) // foreach Schleife durch die map
 	{	
-		if (f.first[1] == 'A')
+		if (f.first[1] == 'A') // zweites Zeichen des key 
 		{
 			std::cout << "\n"<<zeile <<" ";
-		}
+		}                     // feld    
 		std::cout << " " << (f.second.get_hell() ? hell : dunkel);
 		/*
 				if(f.second.get_figur()->get_figurTyp()=='x')

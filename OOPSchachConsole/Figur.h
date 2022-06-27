@@ -1,8 +1,8 @@
 #pragma once
 class Figur
 {
-	char figurTyp;
-	bool figurFarbe;
+	char figurTyp;     // B T L usw. b t l 
+	bool figurFarbe;   // weiﬂ oder schwarz
 public:
 	Figur();
 	Figur(char, bool);

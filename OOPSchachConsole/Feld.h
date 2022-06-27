@@ -9,7 +9,7 @@ class Feld
 
 public:
 	Feld();
-	Feld(char, char);
+	Feld(char, char);  // ctor der Zeile und Spalte erhält
 	Figur* get_figur() { return figur; }
 	bool get_hell() { return hell; }
 };
