@@ -1,0 +1,59 @@
+OOP bei der Anwendungsentwicklung
+
+Userstory  ( wie sieht der Anwender das Programm )
+
+Schach:
+
+Ein User sieht ein Brett mit aufgestellten Figuren
+
+Nach eine Aufforderung gibt er einen Zug ein
+
+Die Figur wird bewegt, wenn der Zug gültig ist
+
+Der andere Spieler wird aufgefordert zu spielen
+
+.... usw.   abwechselnd bis
+
+Ende der Spiels durch Schachmatt, Aufgabe oder Remis erreicht
+
+-----
+1..Objekte identifizieren.
+2..Klassen für Gruppen mit gleichen Eigenschaften ermitteln
+3..Beziehungen ( Vererbung, Assoziationen )
+
+Klassen für Objekte:
+
+Brett mit dem Spielfeld und der Umrandung
+ darauf gibt es Felder mit Figuren der Art Bauer Turm Dame König Springer Läufer
+ die zu Beginn in einer Grundstellung stehen
+ die abwechselnd von Spielern in Zügen nach Regeln bis zum Spielende
+  bewegt werden
+
+
+class Spielfeld
+{
+}
+
+class Umrandung
+{
+}
+
+class Brett
+{
+   Spielfeld sf;
+   Umrandung um;
+}
+
+class Spieler
+{
+}
+
+class Spiel
+{
+     Brett brett;
+     array<Spieler,2> spieler;
+      
+}
+
+
+

@@ -1,0 +1,28 @@
+einfaches Array
+ Daten gleichen Typs
+ gesteuert durch integer Index
+
+ Umsatz[1]   im Januar
+ Umsatz[5]   im Mai
+
+ geht auch mehrdimensional
+ Umsatz[Filiale][Monat]; // Filiale und Monat sind integer Variablen
+
+
+assoziatives Array
+  ist wenn man für den Index durch eine beliebige Datenart verwendet
+
+Umsatz["Nord"]["Mai"]
+Umsatz["West"]["Juni"]
+Umsatz["Nord"]["Juni"]
+
+Ablage im Speicher in der Reihenfolge der Eingabe
+
+Map ist ein geordneter Container mit beliebigem Index
+Ablage im Speicher in der Sortiereihenfolge der Indizes
+
+
+
+
+
+

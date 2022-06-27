@@ -1,0 +1,52 @@
+class Spiel
+beinhaltet ( Attribute)
+	Brett
+	- die 64 Felder, auf denen gespielt wird
+	         Felder mit index vom Typ string ( A2,  B4, G5  , H8)
+			 -> map<string, Feld>  spielFeld 
+	- Umrandung
+
+hat die Methoden
+  - leeres Brett erzeugen ( ctor )
+  - leere Felder einfärben ( ctor )
+  - Figuren in Grundstellung platzieren ( ctor ) 
+  - Spielstand anzeigen
+  - Usereingaben 
+
+class Felder
+- hell oder dunkel
+- darauf befinden sich die Figuren ( Polymorph Art) 
+
+
+class Figur
+- Farbe
+- Art 
+
+- bewegen ( Polymorph ) 
+
+
+
+class Bauer : Figur
+ - bewegen :vertikale Bewegung / 1 oder 2 Felder 
+
+class Turm : Figur
+ - bewegen : vertikale Bewegung und horizontale Bewegung
+
+class Läufer : Figur
+ - bewegen: diagonal
+
+class Springer : Figur
+ - bewegen: Rösselsprung
+
+class Dame : Figur
+ - bewegen: vertikale Bewegung und horizontale Bewegung und diagonal
+
+
+class König : Figur
+
+ - bewegen: vertikale Bewegung und horizontale Bewegung und diagonal
+
+   aber nur 1 Feld
+
+
+

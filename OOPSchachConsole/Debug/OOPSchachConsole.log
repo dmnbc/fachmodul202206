@@ -1,0 +1,6 @@
+﻿  OOPSchachConsole.cpp
+  Spiel.cpp
+D:\_freiberuflich\_dozent\cpp\OOPSchachConsole\OOPSchachConsole\Spiel.cpp(26,14): warning C4309: "Initialisierung": Verkürzung eines konstanten Wertes
+D:\_freiberuflich\_dozent\cpp\OOPSchachConsole\OOPSchachConsole\Spiel.cpp(27,16): warning C4309: "Initialisierung": Verkürzung eines konstanten Wertes
+  Code wird generiert...
+  OOPSchachConsole.vcxproj -> D:\_freiberuflich\_dozent\cpp\OOPSchachConsole\Debug\OOPSchachConsole.exe
