@@ -1,0 +1,9 @@
+﻿  Monat.cpp
+D:\_freiberuflich\_dozent\cpp\OOPTermine\OOPTermine\Monat.cpp(6,1): error C2059: Syntaxfehler: "}"
+D:\_freiberuflich\_dozent\cpp\OOPTermine\OOPTermine\Monat.cpp(10,1): error C2059: Syntaxfehler: "}"
+D:\_freiberuflich\_dozent\cpp\OOPTermine\OOPTermine\Monat.cpp(14,1): error C2059: Syntaxfehler: "}"
+D:\_freiberuflich\_dozent\cpp\OOPTermine\OOPTermine\Monat.cpp(17,1): error C2144: Syntaxfehler: "void" sollte auf ";" folgen
+D:\_freiberuflich\_dozent\cpp\OOPTermine\OOPTermine\Monat.cpp(25,7): error C2059: Syntaxfehler: ")"
+D:\_freiberuflich\_dozent\cpp\OOPTermine\OOPTermine\Monat.cpp(26,7): error C2062: "int"-Typ unerwartet
+  OOPTermine.cpp
+  Code wird generiert...
