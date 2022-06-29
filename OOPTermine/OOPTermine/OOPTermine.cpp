@@ -3,14 +3,14 @@
 
 #include <iostream>
 // zum Test
-#include "Tag.h"
+#include "Monat.h"
 
 int main()
 {
-    for (int tag = 1; tag <= 28; tag++)
+    for (int monat = 1; monat <= 12; monat++)
     {
-        Tag t(tag); // Instanzieren über einen überladenen Konstruktor
-        t.tag_Anzeige();
+        Monat m(monat); // Instanzieren über einen überladenen Konstruktor
+        m.monat_Anzeige();
     }
 }
 
