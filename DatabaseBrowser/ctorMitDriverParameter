@@ -1,0 +1,35 @@
+Database::Database(QString driver)
+{
+    if(QSqlDatabase::isDriverAvailable(driver))
+    {
+
+        // verbinden
+        db = QSqlDatabase::addDatabase("QMYSQL");
+
+        // Userdaten für den Zugang
+        debug<<"Treiber ist "<<db.driverName();
+        db.setHostName(server); // "localhost"
+        db.setUserName(user);   // "root"
+        db.setPassword(pw);     // ""
+        if(db.open()) // Anmeldeversuch
+        {
+
+           debug<<"open sucessfull";
+           connected= true;
+        }
+        else
+        {
+            // Fehler ausgeben
+           QSqlError err = db.lastError();
+            debug<<"open failed "<<err.databaseText();
+        }
+
+    }
+    else
+    {
+        debug<<"Treiber "<<driver<<" ist nicht verfügbar";
+        debug<<"Es sind nur "<<db.drivers()<<" vorhanden";
+
+    }
+
+}
